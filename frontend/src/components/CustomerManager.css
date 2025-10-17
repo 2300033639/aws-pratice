@@ -1,0 +1,197 @@
+/* =====================
+   Customer Manager Styles
+   ===================== */
+
+.customer-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Message Banner */
+.message-banner {
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.message-banner.success {
+  background: linear-gradient(90deg, #4caf50, #43a047);
+  color: white;
+}
+
+.message-banner.error {
+  background: linear-gradient(90deg, #e53935, #d32f2f);
+  color: white;
+}
+
+/* Headings */
+h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #34495e;
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-grid input {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.form-grid input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+.btn-group,
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-blue {
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  color: white;
+}
+
+.btn-green {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  color: white;
+}
+
+.btn-red {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.btn-gray {
+  background: linear-gradient(90deg, #95a5a6, #7f8c8d);
+  color: white;
+}
+
+/* Table Styles */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table thead {
+  background: #3498db;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+table tbody tr:hover {
+  background: #f5f9ff;
+}
+
+/* Single Customer Table */
+.single-customer-table {
+  width: 100%;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.single-customer-table th {
+  background: #f0f4f8;
+  width: 30%;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.single-customer-table td {
+  background: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .customer-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+  }
+}
